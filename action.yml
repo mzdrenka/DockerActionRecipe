@@ -6,10 +6,12 @@ inputs:
     description: 'Kogo pozdrwic'
     required: True
     default: 'Świecie'
-  
+outputs:
+  answer:
+    description: 'Odpowiedź na wszystko (zawsze 42)'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
-  
