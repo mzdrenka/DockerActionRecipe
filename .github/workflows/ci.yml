@@ -10,4 +10,4 @@ jobs:
       - name: Uruchom moja akcje kontenera
         uses: ./
         with:
-          who-to-greet: '@Mateusz'
+          who-to-greet: "@Mateusz"
